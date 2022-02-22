@@ -1,0 +1,22 @@
+.Album {
+  margin: 1%;
+  margin-left: 10%;
+  background-color: aqua;
+  width: 80%;
+  padding: 2%;
+}
+.Fotos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.Foto {
+  width: 30%;
+  cursor: pointer;
+}
+
+.FotoGran {
+  width: 100%;
+  cursor: pointer;
+}
