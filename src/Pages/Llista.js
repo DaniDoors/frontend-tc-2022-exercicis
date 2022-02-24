@@ -11,6 +11,7 @@ import RellotgeDigital from "./RellotgeDigital";
 import RellotgeAnalogic from "./RellotgeAnalogic";
 import Sumador from "./Sumador";
 import TipCalculator from "./TipCalculator";
+import MajorMenor from "./MajorMenor";
 
 const Llista = [
   {
@@ -45,6 +46,11 @@ const Llista = [
     path: "TipCalculator",
     titol: "Tip Calculator",
     element: <TipCalculator />,
+  },
+  {
+    path: "MajorMenor",
+    titol: "Buscar el Major, menor, suma i mitjana d'un array",
+    element: <MajorMenor />,
   },
 ];
 
