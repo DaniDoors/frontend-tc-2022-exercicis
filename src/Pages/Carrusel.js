@@ -1,8 +1,13 @@
 import { useState } from "react";
 import "./Carrusel.css";
 
-const fotos = ["CB125.jpg", "Gladius.jpg", "H2.jpg", "Ninja.jpg", "XSR.jpg"];
-const punts = ["·", "·", "·", "·", "·"];
+const fotos = [
+  "%PUBLIC_URL%/CB125.jpg",
+  "Gladius.jpg",
+  "H2.jpg",
+  "Ninja.jpg",
+  "XSR.jpg",
+];
 
 export default function Carrusel() {
   const [seleccio, setSeleccio] = useState(0);
@@ -16,21 +21,18 @@ export default function Carrusel() {
 
   const amenys = () => {
     if (seleccio > 0) setSeleccio(seleccio - 1);
-    console.log(87);
+    console.log(seleccio);
   };
 
   return (
     <div className="Pantalla">
       <div className="Vista">
         <button onClick={amenys}>a</button>
-        <img src={fotos[seleccio]} alt="none" />
+        <img src="CB125.jpg" alt="none" />
+        {seleccio}
         <button onClick={ames}>b</button>
       </div>
-      <div className="Barra">
-        {punts.map((aquest) => (
-          <div>{punts[aquest]}</div>
-        ))}
-      </div>
+      <div className="Barra"></div>
     </div>
   );
 }
